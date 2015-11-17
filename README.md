@@ -1,1 +1,5 @@
-# Java_EE_Basics
+Repositório voltado a conceitos WEB.
+Tecnologias Apresentadas:
+
+//TODO
+-
