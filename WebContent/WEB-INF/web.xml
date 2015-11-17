@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Java_EE_Basics</display-name>
+ <welcome-file-list>
+	    <welcome-file>/html/default.html</welcome-file>
+	</welcome-file-list>
+	  
+	  <!-- START OF MAPPING CONTENT -->
+	  <!-- NÃO É MAIS NECESSÁRIO MAPEAR DESTA FORMA, APÓS SERVLET 3.0/JAVA 6 EXISTE A ANOTAÇÃO @WebServlet -->
+	<servlet>
+	  	<servlet-name>HelloWorldServlet</servlet-name>
+	  	<servlet-class>content.action.HelloWorldServlet</servlet-class>
+	</servlet>
+	  
+	<servlet-mapping>
+	  	<servlet-name>HelloWorldServlet</servlet-name>
+		<url-pattern>/HelloWorldServlet</url-pattern>
+	</servlet-mapping>							
+	  <!-- END OF MAPPING CONTENT -->
+	  
+	  <!-- START OF ERROR CONTENT -->
+	<!-- <error-page>
+		<error-code>404</error-code>
+		<location>/html/errors/404.html</location>	
+	</error-page>
+	
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/html/errors/generalError.html</location>
+	</error-page> -->
+	  <!-- END OF ERROR CONTENT -->
+</web-app>
